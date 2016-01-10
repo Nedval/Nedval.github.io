@@ -8,7 +8,7 @@ categories: github
 - PC: MacBook Pro (Retina, Mid 2012)
 - OS: Mac OS X El Capitan
 
-# #000 預先準備 #
+# 0x00 預先準備 #
 - GitHub 帳號
 - [GitHub Desktop](https://desktop.github.com)
 - 安裝 Xcode Command Line Tool
@@ -30,7 +30,7 @@ source 'https://rubygems.org'
 gem 'github-pages'
 {% endhighlight %}
 
-# #001 安裝 bundler 以及 Jekyll #
+# 0x01 安裝 bundler 以及 Jekyll #
 打開終端機 `Terminal` 輸入以下指令安裝 `bundler`
 {% highlight sh %}
 $ sudo gem install bundler
@@ -43,13 +43,13 @@ $ cd __PATH__
 $ bundle install
 {% endhighlight %}
 
-# #011 設定 Jekyll #
+# 0x02 設定 Jekyll #
 建立 jekyll project (將以下 `__USERNAME__` 換成自己的 GitHub 帳號 ex:`Nedval`)
 {% highlight sh %}
 $ jekyll new __USERNAME__.github.io
 {% endhighlight %}
 
-# #100 於本機執行 Jekyll #
+# 0x03 於本機執行 Jekyll #
 切換至剛才建立的專案資料夾並執行 jekyll server
 {% highlight sh %}
 $ cd __USERNAME__.github.io
@@ -59,7 +59,7 @@ $ bundle exec jekyll serve
 
 ![Jekyll Screen Shot]({{ site.url }}/images/1451853885.png)
 
-# #101 利用 GitHub Desktop 上傳至 GitHub #  
+# 0x04 利用 GitHub Desktop 上傳至 GitHub #  
 打開 GitHub Desktop  
 點選左上角的 `+` 號後，選擇 `Add`  
 ![GitHub Desktop Screen Shot]({{ site.url }}/images/1451852695.png)
