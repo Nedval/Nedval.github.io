@@ -69,3 +69,6 @@ $ bundle exec jekyll serve
 ![GitHub Desktop Screen Shot]({{ site.url }}/images/1451853670.png)
 
 當 Publish 完成之後就可以在瀏覽器中使用 `http://__USERNAME__.github.io` 連結看到剛才建立的頁面了
+
+# 0xFF 參考資料 #
+- [Using Jekyll with Pages](https://help.github.com/articles/using-jekyll-with-pages/)
