@@ -1,9 +1,12 @@
 ---
 layout: post
 title:  "使用 GitHub Pages & Jekyll 作為部落格"
-date:   2016-01-04 04:47:35
+date:   2016-01-07 04:47:35
 categories: github
 ---
+
+![Octojekyll](https://jekyllrb.com/img/octojekyll.png)
+
 # 本文使用的設備及作業系統 #
 - PC: MacBook Pro (Retina, Mid 2012)
 - OS: Mac OS X El Capitan
