@@ -56,7 +56,7 @@ $ jekyll new __USERNAME__.github.io
 切換至剛才建立的專案資料夾並執行 jekyll server
 {% highlight sh %}
 $ cd __USERNAME__.github.io
-$ bundle exec jekyll serve
+$ bundle exec jekyll server
 {% endhighlight %}
 這樣就可以在瀏覽器輸入 `http://localhost:4000` 看到初始化的 GitHub Pages
 
