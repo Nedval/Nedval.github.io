@@ -70,3 +70,7 @@ var disqus_config = function () {
   
 將修改後的樣板上傳之後應該就會看到 DISQUS 的留言區塊囉！  
 ![DISQUS Screen Shot]({{ site.url }}/images/1453389903.png)
+
+# 0xFF 參考資料 #
+
+- [Jekyll Installation Instructions](https://help.disqus.com/customer/portal/articles/472138-jekyll-installation-instructions)
