@@ -16,7 +16,7 @@ layout: default
   <div id="disqus_thread"></div>
   <script>
     var disqus_config = function () {
-      this.page.url = "{{ page.url }}";
+      this.page.url = "{{ site.url }}{{ page.url }}";
       this.page.identifier = btoa(this.page.url).replace(
         /\+|\\|=/gi,
         function f(p){
@@ -30,7 +30,6 @@ layout: default
           }
         }
       );
-      window.console.log(this.page.identifier);
     };
     (
       function() {
