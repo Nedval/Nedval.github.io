@@ -5,7 +5,9 @@
   <a id="test" href="#test">test</a>
   <script>
   window.addEventListener('hashchange', function() {
-    window.location.href = "https://nedval.github.io"
+    setTimeout(function() {
+      window.location.href = "https://nedval.github.io"
+    }, 1000)
   }, false)
   window.onload = function() {
     if (window.location.hash == "") {
@@ -13,10 +15,11 @@
         document.getElementById("test").click()
       },1000)
     }
-    else {
+  }
+    
+    if (window.location.hash != "") {
       alert(window.location.hash)
     }
-  }
   </script>
 </body>
 </html>
