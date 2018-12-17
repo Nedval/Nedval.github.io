@@ -9,8 +9,9 @@
       setTimeout(function() {
         document.getElementById("test").click()
         window.location.href = "#test"
+        window.location.reload()
         window.location = "https://nedval.github.io"
-      },10000)
+      },1000)
     }
     else {
       alert(window.location.hash)
