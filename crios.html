@@ -8,7 +8,7 @@
     setTimeout(function() {
       window.location.href = "https://nedval.github.io"
     }, 1000)
-  })
+  }, false)
     window.addEventListener('pageshow', function() {
       console.log("page show")
       if (window.location.hash != "") {
@@ -16,7 +16,7 @@
           alert(window.location.hash)
         }, 1000)
       }
-    })
+    }, false)
   window.onload = function() {
     console.log("onload");
     if (window.location.hash == "") {
