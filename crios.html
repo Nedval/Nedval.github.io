@@ -11,7 +11,11 @@
   })
     window.addEventListener('pageshow', function() {
       console.log("page show")
-      alert(window.location.hash)
+      if (window.location.hash != "") {
+        setTimeout(function() {
+          alert(window.location.hash)
+        }, 1000)
+      }
     })
   window.onload = function() {
     console.log("onload");
@@ -21,11 +25,6 @@
       },1000)
     }
   }
-    
-    if (window.location.hash != "") {
-      console.log("hash")
-      alert(window.location.hash)
-    }
   </script>
 </body>
 </html>
