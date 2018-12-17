@@ -4,7 +4,7 @@
 <body>
   <script>
   window.onload = function() {
-    var time = window.localtion.hash.replace("#", "").split("-")
+    var time = window.location.hash.replace("#", "").split("-")
     window.location = "#" + time[0];
     setTimeout(function() {
       window.location = "https://nedval.github.io";
