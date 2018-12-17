@@ -8,7 +8,10 @@
     setTimeout(function() {
       window.location.href = "https://nedval.github.io"
     }, 1000)
-  }, false)
+  })
+    window.addEventListener('pageshow', function() {
+      alert(window.location.hash)
+    })
   window.onload = function() {
     if (window.location.hash == "") {
       setTimeout(function() {
