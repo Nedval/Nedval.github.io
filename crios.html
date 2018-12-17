@@ -6,10 +6,9 @@
   <script>
   window.onload = function() {
     if (window.location.hash == "") {
+      document.getElementById("test").click()
       setTimeout(function() {
-        document.getElementById("test").click()
-        window.location = "#test"
-        window.location.href = "https://nedval.github.io"
+        window.location = "https://nedval.github.io"
       },10000)
     }
     else {
