@@ -2,16 +2,13 @@
 <html>
 <title>CriOS testing</title>
 <body>
-  <p id="test">test</p>
+  <a id="test" href="#test">test</a>
   <script>
-  window.addEventListener("popstate", function(e) {
-    alert(JSON.stringify(e))
-  })
   window.onload = function() {
     var time = window.location.hash.replace("#", "").split("-")
-    window.location = "#" + time[0];
     setTimeout(function() {
-      window.location = "https://nedval.github.io";
+      document.getElementById(time[0]).click()
+      window.location = "https://nedval.github.io"
     }, parseInt(time[1]))
   }
   </script>
