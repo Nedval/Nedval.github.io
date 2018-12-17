@@ -5,11 +5,8 @@
   <a id="test" href="#test">test</a>
   <script>
   window.onload = function() {
-    var time = window.location.hash.replace("#", "").split("-")
-    setTimeout(function() {
-      document.getElementById(time[0]).click()
-      window.location = "https://nedval.github.io"
-    }, parseInt(time[1]))
+    document.getElementById(time[0]).click()
+    window.location = "https://nedval.github.io"
   }
   </script>
 </body>
