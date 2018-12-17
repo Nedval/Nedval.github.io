@@ -6,7 +6,6 @@
   <script>
   window.onload = function() {
     if (window.location.hash == "") {
-      document.getElementById("test").click()
       setTimeout(function() {
         document.getElementById("test").click()
         window.location = "https://nedval.github.io"
@@ -18,8 +17,7 @@
   }
     
     function setLocation() {
-      alert("onclick")
-      window.location = "#test"
+      window.location.href = "#test"
     }
   </script>
 </body>
