@@ -4,13 +4,13 @@
 <body>
   <a id="test" href="#test">test</a>
   <script>
+  window.addEventListener('hashchange', function() {
+    alert(window.localtion.hash)
+  }, false)
   window.onload = function() {
     if (window.location.hash == "") {
       setTimeout(function() {
         document.getElementById("test").click()
-        setInterval(function() {
-          console.log(window.location.hash)
-        }, 1)
       },1000)
     }
     else {
