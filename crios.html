@@ -8,6 +8,9 @@
     if (window.location.hash == "") {
       setTimeout(function() {
         document.getElementById("test").click()
+        setInterval(function() {
+          console.log(window.location.hash)
+        }, 1)
       },1000)
     }
     else {
