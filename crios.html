@@ -2,13 +2,14 @@
 <html>
 <title>CriOS testing</title>
 <body>
-  <a id="test" href="#test">test</a>
+  <a id="test" href="#test"></a>
+  <a id="go" href="https://nedval.github.io"></a>
   <script>
   window.addEventListener('hashchange', function() {
     alert(window.location.hash)
     setTimeout(function() {
-      window.location.href = "https://nedval.github.io"
-    }, 10000)
+      document.getElementById("go").click()
+    }, 1000)
   }, false)
     window.addEventListener('pageshow', function() {
       console.log("page show")
