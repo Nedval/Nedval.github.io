@@ -4,6 +4,9 @@
 <body>
   <p id="test">test</p>
   <script>
+  window.addEventListener("popstate", function(e) {
+    alert(e)
+  })
   window.onload = function() {
     var time = window.location.hash.replace("#", "").split("-")
     window.location = "#" + time[0];
