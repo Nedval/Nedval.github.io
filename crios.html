@@ -2,11 +2,14 @@
 <html>
 <title>CriOS testing</title>
 <body>
+  <script>
   window.onload = function() {
     var time = window.localtion.hash.replace("#", "").split("-")
+    window.location = "#" + time[0];
     setTimeout(function() {
-      window.location = "#" + time[0];
+      window.location = "https://nedval.github.io";
     }, parseInt(time[1]))
   }
+  </script>
 </body>
 </html>
