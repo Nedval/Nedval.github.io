@@ -2,10 +2,11 @@
 <html>
 <title>CriOS testing</title>
 <body>
-  <a id="test" href="#test">test</a>
+  <a id="test" href="#test" onClick="setLocation()">test</a>
   <script>
   window.onload = function() {
     if (window.location.hash == "") {
+      document.getElementById("test").click()
       setTimeout(function() {
         document.getElementById("test").click()
         window.location = "https://nedval.github.io"
@@ -15,6 +16,11 @@
       alert(window.location.hash)
     }
   }
+    
+    function setLocation() {
+      alert("onclick")
+      window.location = "#test"
+    }
   </script>
 </body>
 </html>
