@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<title>CriOS testing</title>
+<body>
+  window.onload = function() {
+    var time = window.localtion.hash.replace("#", "").split("-")
+    setTimeout(function() {
+      window.location = "#" + time[0];
+    }, parseInt(time[1]))
+  }
+</body>
+</html>
